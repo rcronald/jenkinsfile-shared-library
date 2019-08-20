@@ -1,7 +1,7 @@
 @Library('jenkins-shared-library@master')
 import customlib.JenkinsLibrary
 
-def customLibrary = new JenkinsLibrary(steps, this)
+//def customLibrary = new JenkinsLibrary(steps, this)
 
 try{
     node {
@@ -12,6 +12,8 @@ try{
         stage('Test'){
             echo "test"
             //customLibrary.steps.echo "Test"
+            sh 'pwd'
+            sh 'ls'
         }
     }
 } catch(Exception e) {
