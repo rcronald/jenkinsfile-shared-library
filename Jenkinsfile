@@ -1,18 +1,20 @@
-@Library('jenkins-shared-library')
-import customlib.JenkinsLibrary
+//@Library('jenkins-shared-library')
+//import customlib.JenkinsLibrary
 
 def customLibrary = new JenkinsLibrary(steps, this)
 
 try{
     node {
-        stage('Build'){  
-            customLibrary.steps.echo "Build"
+        stage('Build'){
+            echo "build"
+            //customLibrary.steps.echo "Build"
         }
-        stage('Test'){  
-            customLibrary.steps.echo "Test"
+        stage('Test'){
+            echo "test"
+            //customLibrary.steps.echo "Test"
         }
     }
 } catch(Exception e) {
-    customLibrary.steps.echo "ERROR"
+    //customLibrary.steps.echo "ERROR"
     throw e
 }
