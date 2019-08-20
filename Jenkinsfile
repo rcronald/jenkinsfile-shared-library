@@ -1,7 +1,7 @@
 @Library('jenkins-shared-library@master')
 import customlib.JenkinsLibrary
 
-//def customLibrary = new JenkinsLibrary(steps, this)
+def customLibrary = new JenkinsLibrary(steps, this)
 
 try{
     node {
