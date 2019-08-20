@@ -1,4 +1,4 @@
-//@Library('jenkins-shared-library')
+@Library('jenkins-shared-library')
 //import customlib.JenkinsLibrary
 
 //def customLibrary = new JenkinsLibrary(steps, this)
